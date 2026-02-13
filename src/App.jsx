@@ -1,4 +1,5 @@
 import ComingSoonOverlay from "./components/ComingSoonOverlay"
+import Footer from "./components/Footer"
 import Header from "./components/Header"
 import AppRoutes from "./routes/AppRoutes"
 
@@ -8,6 +9,7 @@ const App = () => {
       <Header />
       <ComingSoonOverlay/>
       <AppRoutes />
+      <Footer />
     </div>
   )
 }
