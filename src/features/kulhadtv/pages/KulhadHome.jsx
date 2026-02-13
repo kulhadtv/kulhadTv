@@ -1,7 +1,7 @@
 import CardSlider from '../../../components/CardSlider';
 import Navigation from '../../../components/Navigation';
 import HeroSection from '../components/HeroSection'
-import { continueWatching, liveStreaming, movieData } from '../data/cardContent';
+import { continueWatching, criming, kidsStreaming, liveStreaming, movieData } from '../data/cardContent';
 
 
 const KulhadHome = () => {
@@ -17,16 +17,16 @@ const KulhadHome = () => {
     },
 
     {
-      title: "Continue Watching",
+      title: "Popular in Crime",
+      data: criming,
+    },
+    {
+      title: "Popular in Reality",
       data: continueWatching,
     },
     {
-      title: "Continue Watching",
-      data: continueWatching,
-    },
-    {
-      title: "Continue Watching",
-      data: continueWatching,
+      title: "Popular in Kids",
+      data: kidsStreaming,
     }
   ];
 
