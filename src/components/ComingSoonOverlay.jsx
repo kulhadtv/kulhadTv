@@ -39,7 +39,7 @@ export default function ComingSoonOverlay() {
     return (
         <div style={style} className="flex items-center justify-center bg-black/40 backdrop-blur-xs">
             <div className="text-center px-4 my-auto w-full max-w-full sm:max-w-xl">
-                <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+                <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent leading-tight">
                     Coming Soon
                 </h1>
                 <p className="text-gray-200 mt-2 text-sm sm:text-base md:text-lg">

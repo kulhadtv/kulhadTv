@@ -19,6 +19,14 @@ const KulhadHome = () => {
     {
       title: "Continue Watching",
       data: continueWatching,
+    },
+    {
+      title: "Continue Watching",
+      data: continueWatching,
+    },
+    {
+      title: "Continue Watching",
+      data: continueWatching,
     }
   ];
 
