@@ -1,5 +1,5 @@
 import ComingSoonOverlay from "./components/ComingSoonOverlay"
-import Header from "./components/header"
+import Header from "./components/Header"
 import AppRoutes from "./routes/AppRoutes"
 
 const App = () => {
