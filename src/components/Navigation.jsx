@@ -19,7 +19,7 @@ export default function Navigation() {
     return (
         <>
             {/*  Desktop Horizontal Nav (Transparent) */}
-            <div className="hidden md:flex w-fit justify-start gap-10 py-4 px-4 backdrop-blur-xl bg-gradient-to-r from-black/60 via-black/40 to-transparent shadow-2xl">
+            <div className="hidden fixed z-40 md:flex w-fit justify-start gap-10 py-4 px-4 backdrop-blur-xl bg-gradient-to-r from-black/60 via-black/40 to-transparent shadow-2xl">
                 {navItems
                     .filter(item => item.label !== "Search")   // remove search
                     .map((item) => {
@@ -38,7 +38,7 @@ export default function Navigation() {
             </div>
 
             {/* Mobile Bottom Navigation */}
-            <div className="fixed bottom-0 left-0 w-full backdrop-blur-xl bg-gradient-to-r from-black/60 via-black/40 to-transparent shadow-2xl md:hidden flex justify-around items-center py-2 rounded-t-2xl shadow-lg">
+            <div className="fixed bottom-0 left-0 z-40 w-full backdrop-blur-xl bg-gradient-to-r from-black/60 via-black/40 to-transparent shadow-2xl md:hidden flex justify-around items-center py-2 rounded-t-2xl shadow-lg">
                 {navItems.map((item) => {
                     const Icon = item.icon;
                     return (

@@ -1,10 +1,12 @@
-import KulhadTVApp from "./components/KulhadTv"
+import ComingSoonOverlay from "./components/ComingSoonOverlay"
+import Header from "./components/header"
 import AppRoutes from "./routes/AppRoutes"
 
 const App = () => {
   return (
     <div className='bg-[#0a1929] text-white relative min-h-screen'>
-      <KulhadTVApp />
+      <Header />
+      <ComingSoonOverlay/>
       <AppRoutes />
     </div>
   )

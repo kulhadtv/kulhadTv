@@ -1,5 +1,4 @@
 import CardSlider from '../../../components/CardSlider';
-import ComingSoonOverlay from '../../../components/ComingSoonOverlay';
 import Navigation from '../../../components/Navigation';
 import HeroSection from '../components/HeroSection'
 import { continueWatching, liveStreaming, movieData } from '../data/cardContent';
@@ -24,8 +23,7 @@ const KulhadHome = () => {
   ];
 
   return (
-    <div>
-      <ComingSoonOverlay/>
+    <div className="pt-[68px]"> {/* ensure content sits below fixed header */}
       <Navigation />
       <HeroSection />
       <div className="py-6">

@@ -1,18 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import boloo from '../../../assets/boloo.jpeg';
 
 export default function HeroSection() {
     const [currentSlide, setCurrentSlide] = useState(0);
 
-    // Sample slideshow images - replace with your actual images
     const slideshowImages = [
-        'https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1574267432644-f61742e18185?w=800&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=800&h=400&fit=crop',
-        'https://images.unsplash.com/photo-1512070679279-8988d32161be?w=800&h=400&fit=crop'
+        'https://www.dishadaily.com/h-upload/2023/08/10/246817-jailer.webp',
+        'https://images.ottplay.com/images/media/gallery/pushpa-2-movie-review-4-1-1733372291.jpg',
+        'https://images.justwatch.com/backdrop/312117355/s640/siddharth-roy',
+        'https://assets.thehansindia.com/h-upload/2022/07/29/1305321-ramarao-on-duty-movie-review.webp',
+        'https://st1.latestly.com/wp-content/uploads/2024/01/Guntur-Kaaram-Movie-Leaked-380x214.jpg'
     ];
 
-    // Auto-advance slides
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrentSlide((prev) => (prev + 1) % slideshowImages.length);
@@ -25,14 +24,14 @@ export default function HeroSection() {
     };
 
     return (
-        <div className="w-full py-8 px-4 md:px-8 bg-[#0a1929]">
+        <div className="w-full py-8 px-4 md:px-8 bg-[#0a1929] md:pt-[70px]">
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-[35%_65%] gap-4 md:gap-10">
                     {/* Left Card - Studio Image */}
                     <div className="flex justify-center items-stretch">
                         <div className="relative w-full h-64 md:h-full rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl">
                             <img
-                                src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=800&h=400&fit=crop"
+                                src={boloo}
                                 alt="Studio Equipment"
                                 className="w-full h-full object-cover"
                             />
@@ -64,14 +63,6 @@ export default function HeroSection() {
                             ))}
 
                             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-
-                            <div className="absolute inset-0 flex items-center justify-center p-4">
-                                <div className="bg-gradient-to-r from-orange-500 to-red-500 px-6 py-3 md:px-8 md:py-4 rounded-xl shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-300">
-                                    <span className="text-white font-bold text-xl md:text-2xl lg:text-3xl tracking-wider">
-                                        COMING SOON
-                                    </span>
-                                </div>
-                            </div>
                         </div>
 
                         {/* Slide Indicators */}

@@ -1,18 +1,19 @@
 import { FaSearch } from "react-icons/fa";
 
-const KulhadTv = () => {
+const Header = () => {
     return (
-        <div className="bg-[#0f2942] px-6 py-4 flex items-center justify-between">
+        <div id="app-header" className="fixed top-0 left-0 w-full z-50 bg-[#0f2942] px-6 py-4 flex items-center justify-between">
 
             {/* CHAICHAT */}
             <div className="text-xl font-bold text-white">
-                CHAICHAT
+                BOLOO
             </div>
 
             {/* Left Section (Logo + Search) */}
             <div className="flex items-center gap-6">
                    {/* Search Field */}
-                <div className="flex items-center bg-[#213f5b] px-4 py-2 rounded-xl w-80 hidden">
+                {/* show search only on md+ because it’s wide */}
+                <div className="hidden md:flex items-center bg-[#213f5b] px-4 py-2 rounded-xl w-80">
                     <FaSearch className="text-gray-400 mr-2 text-sm" />
                     <input
                         type="text"
@@ -32,4 +33,4 @@ const KulhadTv = () => {
     );
 };
 
-export default KulhadTv;
+export default Header;
