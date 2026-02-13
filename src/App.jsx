@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div className='bg-[#0a1929] text-white relative min-h-screen'>
       <Header />
-      {/* <ComingSoonOverlay/> */}
+      <ComingSoonOverlay/>
       <AppRoutes />
       <Footer />
     </div>
