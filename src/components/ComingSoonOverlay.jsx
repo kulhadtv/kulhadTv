@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 export default function ComingSoonOverlay() {
-    // calculate top inset based on header height; we only update on resize or header changes
     const [topInset, setTopInset] = useState(0);
 
     useEffect(() => {

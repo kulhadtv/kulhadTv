@@ -31,7 +31,7 @@ const KulhadHome = () => {
   ];
 
   return (
-    <div className="pt-[68px]"> {/* ensure content sits below fixed header */}
+    <div className="pt-[68px]"> 
       <Navigation />
       <HeroSection />
       <div className="py-6">
